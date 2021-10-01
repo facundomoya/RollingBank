@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Facundo Moya" />
+    <meta name="description" content="pagina de un banco asociado a rolling" />
+    <meta name="keywords" content="banco, rollingBank" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5a0711485.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>RollingBank</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light">
+        <span class="navbar-brand h1 titulonavbar">RollingBank</span>
+        <div class="d-flex flex-row mb-2">
+          <a href="index.html">Inicio</a>
+          <a href="error404.html">¿Quienes somos?</a>
+          <a href="precios.html">Precios</a>
+          <a href="seguridad.html">Seguridad</a>
+          <a href="error404.html" target="blank">Robo o extravío</a>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/1.png"
+              class="d-block w-100 slider-responsive"
+              alt="imagen de una advertencia, con un texto centrado"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/2.png"
+              class="d-block w-100 slider-responsive"
+              alt="imagen de una tarjeta, con una publicidad textual centrada"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/3.png"
+              class="d-block w-100 slider-responsive"
+              alt="imagen con un texto hacia la derecha"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <main class="pt-5">
+      <section class="ordencards">
+        <div class="card shadow p-3" style="width: 19rem; height: 11rem">
+          <div class="card-body text-center">
+            <i class="far fa-handshake text-danger fa-3x"></i>
+            <h6 class="card-subtitle mb-2 mt-1">
+              <strong>Sin sorpresas</strong>
+            </h6>
+            <p class="card-text textocardsytelefono">
+              Somos transparentes, no vas a encontrar letra chica.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card shadow margin2card"
+          style="width: 19rem; height: 11rem"
+        >
+          <div class="card-body text-center">
+            <i class="fas fa-balance-scale text-primary fa-3x"></i>
+            <h6 class="card-subtitle mb-2 mt-1"><strong>Aprobado</strong></h6>
+            <p class="card-text textocardsytelefono">
+              Estamos autorizados y regulados por el Banco Central.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow p-3" style="width: 19rem; height: 11rem">
+          <div class="card-body text-center">
+            <i class="fas fa-dollar-sign text-success fa-3x"></i>
+            <h6 class="card-subtitle mb-2 mt-1"><strong>Sin costos</strong></h6>
+            <p class="card-text textocardsytelefono">
+              Todas tus operaciones diarias están incluidas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="orden2section mt-5 pb-5">
+        <img
+          src="img/iphone-illustration-sec.png"
+          width="22%"
+          height="22%"
+          alt="imagen de un iphone"
+          class="me-1"
+          id="ordentelefono"
+        />
+        <div class="ms-4">
+          <h4>Tu seguridad como prioridad</h4>
+          <p class="subtexto">
+            Seguimos las mejores prácticas en cyberseguridad sin complicarte tu
+            operación diaria.
+          </p>
+          <div class="ordentextos mt-4">
+            <div>
+              <i class="far fa-eye text-danger fa-2x"></i>
+              <h4>Biometría</h4>
+              <p class="textocardsytelefono">
+                Nuestra tecnología te permite acceder a tu cuenta<br />usando tu
+                huella digital o tu cara.
+              </p>
+            </div>
+            <div class="mx-5">
+              <i class="fas fa-balance-scale text-primary fa-2x"></i>
+              <h4>Segundo factor</h4>
+              <p class="textocardsytelefono">
+                Usamos un Token invisible para todas las<br />operaciones que
+                hagas.
+              </p>
+            </div>
+          </div>
+          <div class="ordentextos mt-5">
+            <div>
+              <i class="fas fa-laptop-house text-info fa-2x"></i>
+              <h4>Personal</h4>
+              <p class="textocardsytelefono">
+                Vas a poder ingresar desde un dispositivo a la vez <br />
+                a tu cuenta.
+              </p>
+            </div>
+            <div class="mx-5">
+              <i class="fas fa-microchip text-success fa-2x"></i>
+              <h4>100% encriptado</h4>
+              <p class="textocardsytelefono">
+                Usamos un Token invisible para todas las <br />
+                operaciones que hagas. Todas las transacciones <br />
+                son encriptadas para tu mayor seguridad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <article class="textoultimoparrafo p-5">
+      <h1 class="display-5">RollingBank te esta esperando</h1>
+      <p class="pt-2">
+        Bajá la app y viví una nueva experiencia. Empezá creando tu cuenta sólo
+        con tu DNI.
+      </p>
+      <div class="pt-2">
+        <img
+          src="img/badge-apple-store.svg"
+          width="15%"
+          alt="imagen de la tienda Apple"
+          class="tamañoimgsarticle"
+        />
+        <img
+          src="img/google-play-badge-bb.svg"
+          width="15%"
+          alt="imagen de google play"
+          class="tamañoimgsarticle"
+        />
+      </div>
+    </article>
+    <footer>
+      <div class="ordenfooter ordenfooter1">
+        <p class="titulofooter" id="titulodelfooter">RollingBank</p>
+        <a href="error404.html">
+          <i class="fab fa-facebook-square text-secondary fa-1x ms-4"></i>
+        </a>
+        <a href="error404.html">
+          <i class="fab fa-twitter-square text-secondary fa-1x ms-2"></i>
+        </a>
+        <a href="error404.html">
+          <i class="fab fa-instagram-square text-secondary fa-1x ms-2"></i>
+        </a>
+      </div>
+      <div class="ordenfooter ordenfooter2 margin4columnas">
+        <div class="orden234columna footercolumna">
+          <h6 class="text-secondary pt-1 mx-5">Navegación</h6>
+          <a href="error404.html" class="text-secondary pt-1 mx-5">¿Quiénes somos?</a>
+          <a href="precios.html" class="text-secondary pt-1 mx-5">Precios</a>
+          <a href="seguridad.html" class="text-secondary pt-1 mx-5">Seguridad</a>
+          <a href="error404.html" class="text-secondary pt-1 mx-5">Ayuda</a>
+          <a href="error404.html" class="text-secondary pt-1 mx-5">Robo o extravío</a>
+        </div>
+        <div class="orden234columna footercolumna" id="margin2col">
+          <h6 class="text-secondary pt-1 mx-5">Legales</h6>
+          <a href="error404.html" class="text-secondary pt-1 mx-5"
+            >Régimen de transparencia</a
+          >
+          <a href="error404.html" class="text-secondary pt-1 mx-5">Usuario bancario</a>
+          <a href="error404.html" class="text-secondary pt-1 mx-5">Conducta bancaria</a>
+          <a href="error404.html" class="text-secondary pt-1 mx-5">Estados contables</a>
+          <a href="error404.html" class="text-secondary pt-1 mx-5"
+            >Terminos y condiciones</a
+          >
+        </div>
+        <img
+          src="img/usuariosfinancieros.png"
+          class="footerimg1"
+          width="12%"
+          height="8%"
+          alt="imagen de usuarios financieros del Banco Central"
+          id="imagen3col"
+        />
+        <div class="orden234columna footer4col">
+          <h6 class="text-secondary pt-1 mx-5 footerunite">Unite</h6>
+          <img
+            src="img/badge-apple-store.svg"
+            class="footerimgs2"
+            width="45%"
+            alt="imagen de la tienda Apple"
+          />
+          <img
+            src="img/google-play-badge-bb.svg"
+            width="45%"
+            class="footerimgs2 mt-2"
+            alt="imagen de google play"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* SELECTORES DE ETIQUETA */
+
+nav {
+  background: #f0f0f0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: small;
+  position: relative;
+  right: 135px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+main {
+  background: #f0f0f0;
+}
+
+footer {
+  background: #1c1c1c;
+  padding-bottom: 70px;
+  padding-right: 80px;
+}
+
+footer p {
+  color: white;
+  padding-left: 120px;
+  padding-top: 35px;
+}
+
+footer a {
+  padding-top: 35px;
+  text-decoration: none;
+}
+
+/* SELECTORES DE CLASE */
+
+.titulonavbar {
+  position: relative;
+  left: 175px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.textocardsytelefono {
+  font-size: small;
+}
+
+.subtexto {
+  font-family: "Roboto", sans-serif;
+}
+
+.textoultimoparrafo {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #006bff;
+  color: white;
+}
+
+.ordencards {
+  display: flex;
+  justify-content: center;
+}
+
+.margin2card {
+  /* para dejar un margin entre las 3 cards, afectando el margen de la segunda card */
+  margin: 0px 30px 0px 30px;
+}
+
+.orden2section {
+  /* es el orden a partir de flexbox entre la imagen del telefono y el texto */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ordentextos {
+  /* es el orden entre los 4 parrafos del segundo section */
+  display: flex;
+  flex-direction: row;
+}
+
+/* FOOTER */
+
+.titulofooter {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 19px;
+  margin-left: 30px;
+}
+
+.footercolumna {
+  /* es el margen de la primera y segunda columna y tamaño de las letras de los vinculos  */
+  margin-left: 120px;
+  font-size: small;
+}
+
+.footerimg1 {
+  /* margen de la primera imagen, (tercera columna) */
+  margin-left: 75px;
+  margin-top: 8px;
+}
+
+.footerimgs2 {
+  /* margen de las dos imagenes de la cuarta y ultima columna  */
+  margin-left: 135px;
+}
+
+.footerunite {
+  /* margen del titulo de la cuarta columna */
+  padding-left: 90px;
+}
+
+.ordenfooter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+.orden234columna {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.margin4columnas {
+  margin-left: 145px;
+}
+
+.imagenerror404 {
+  /* imagen pagina error 404 */
+  text-align: center;
+  background: white;
+}
+
+.tituloprecios {
+  /* clase para el article de la pagina precios */
+  font-family: "Black Han Sans", sans-serif;
+  text-align: center;
+  background: #006bff;
+  color: white;
+  padding: 45px 0px;
+}
+
+.listaprecios {
+  margin: 50px 150px;
+}
+
+.letralista {
+  font-size: smaller;
+  margin: 7px 15px 15px 55px;
+}
+
+.formaprecios {
+  border-radius: 10%;
+  padding: 1px 4px 6px 4px;
+  background: #006bff;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.marginlistatitulos {
+  /* es el margin entre el titulo de las listas y el lorem */
+  position: relative;
+  bottom: 5px;
+}
+
+.columnasseguridad{
+  font-size: smaller;
+}
+
+.posimagenseguridad{
+  float: left;
+}
+
+.posimagenseguridad2{
+  float: right;
+}
+
+ .hrclase{
+  clear: both;
+  color: white;
+} 
+
+.margindel1divseguridad{
+  margin: 30px 200px;
+
+}
+
+.margin1columnaseguridad{
+  margin-left: 430px;
+}
+
+.margin2filaseguridad{
+  margin: 50px 0px;
+}
+
+.margin3imagenseguridad{
+  margin-left: 15px ;
+}
+
+.acordeon{
+  color: #006bff;
+  margin: 1px 0px;
+  font-size: smaller;
+}
+
+.colorfondoseguridad{
+  background: #f0f0f0;
+}
+
+/* MEDIA QUERIES */
+
+/* dispositivos small (telefonos) */
+
+@media all and (max-width: 576px) {
+  .titulonavbar {
+    position: relative;
+    left: 9px;
+    font-family: "Black Han Sans", sans-serif;
+  }
+
+  nav a {
+    position: relative;
+    left: 9px;
+    font-size: 8px;
+  }
+
+  .slider-responsive {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .ordencards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .margin2card {
+    /* margin entre las cards, aplicada solo a la segunda card */
+    margin: 15px 20px;
+  }
+
+  .orden2section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ordentelefono {
+    width: 55%;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .tamañoimgsarticle {
+    /* el tamaño de las imagenes de iphone y google play del article */
+    width: 35%;
+  }
+
+  .ordenfooter1 {
+    /* es el orden del titulo y de los iconos */
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .ordenfooter2 {
+    /* es el orden del bloque de las 4 columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 50px;
+  }
+
+  #imagen3col {
+    /* es la imagen de la 3 columna del footer */
+    width: 50%;
+    margin: 20px 0px;
+  }
+
+  #margin2col {
+    /* margin de la 2 columna del footer */
+    margin: 20px 0px 20px 45px;
+  }
+
+  .footerimg1 {
+    /* es la posicion de la primera imagen del footer, es decir la 3 columna */
+    position: relative;
+    left: 25px;
+  }
+
+  .footer4col {
+    /* margen de la 4 columna del footer */
+    margin: 20px 140px 0px 0px;
+  }
+
+  .footerimgs2 {
+    /* ancho de las imagenes de la cuarta columna */
+    width: 60%;
+  }
+
+  .imagenerror404 {
+    /* imagen pagina error 404 */
+    background: white;
+    width: 100%;
+  }
+
+  .listaprecios {
+    margin: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .letralista {
+    font-size: smaller;
+    margin: 7px 55px 15px 75px;
+    text-align: cente;
+  }
+  
+  .margin1fila{
+    /* margin de la 1 fila de la lista de precios */
+    margin: 0px 80px;
+  }
+
+  .margin3y4fila{
+    /* margin de la 3 y 4 fila de la lista de precios */
+    margin:0px 76px;
+  }
+
+  .organizarseguridad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    float: none;
+  }
+
+  .margindel1divseguridad{
+    margin: 20px 15px;
+  
+  }
+  
+  .margin1columnaseguridad{
+      margin-left: 0px
+  }
+  
+  .margin2filaseguridad{
+    margin: 20px 0px;
+  }
+  
+  .margin3imagenseguridad{
+    margin-left: 15px ;
+    width: 50%;
+  }
+
+  .posimagenseguridad{
+   margin-right: 15px;
+   width: 50%;
+  }
+  
+  .texto2filaseguridad{
+   margin-right: 0px;
+  }
+
+  .textoacordeon{
+    font-size: small;
+  }
+  
+}
+
+/* media queries especial iPhone 5/SE */
+
+@media all and (width: 320px) {
+  #margin2col {
+    margin: 20px 0px 20px 25px;
+  }
+
+  #imagen3col {
+    width: 50%;
+    margin: 20px 25px 20px 0px;
+  }
+
+  nav a {
+    font-size: 9px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 30px;
+  }
+
+}
+
+/* media queries especial iPhone X */
+
+@media all and (width: 375px) {
+  #margin2col {
+    margin: 20px 0px 20px 50px;
+  }
+
+  #imagen3col {
+    width: 50%;
+    margin: 20px 0px 20px 0px;
+  }
+
+  footer {
+    padding-bottom: 260px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 60px;
+  }
+}
+
+/* media queries especial iPhone 6/7/8 Plus y Pixel 2 - Pixel XL */
+
+@media all and (width: 411px), (width: 414px) {
+  nav a {
+    font-size: 12px;
+  }
+
+  footer {
+    padding-bottom: 240px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 77px;
+  }
+}
+
+/* media queries especial Moto G4 - Galaxy S5 */
+
+@media all and (width: 360px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+
+/* media queries especial iPad */
+
+@media all and (width: 768px) {
+  footer {
+    padding-bottom: 450px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 215px;
+  }
+
+  .ordenfooter2 {
+    /* es el orden del bloque de las 4 columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  #imagen3col {
+    /* es la imagen de la 3 columna del footer */
+    width: 25%;
+    margin: 20px 0px;
+  }
+
+  #margin2col {
+    /* margin de la 2 columna del footer */
+    margin: 20px 0px 20px 45px;
+  }
+
+  .footerimg1 {
+    /* es la posicion de la primera imagen del footer, es decir la 3 columna */
+    position: relative;
+    left: 25px;
+  }
+
+  .footer4col {
+    /* margen de la 4 columna del footer */
+    margin: 20px 50px 0px 0px;
+  }
+
+  .footerimgs2 {
+    /* ancho de las imagenes de la cuarta columna */
+    width: 40%;
+  }
+
+  .imagenerror404 {
+    /* imagen pagina error 404 */
+    background: white;
+    width: 100%;
+  }
+
+  .orden2section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ordencards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+  }
+
+  #ordentelefono {
+    margin: 0px 0px 50px 0px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: small;
+    position: relative;
+    right: 30px;
+    font-size: 14px;
+  }
+
+  .titulonavbar {
+    position: relative;
+    left: 50px;
+    font-family: "Black Han Sans", sans-serif;
+  }
+
+  .organizarseguridad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    float: none;
+  }
+
+  .margindel1divseguridad{
+    margin: 20px 15px;
+  
+  }
+  
+  .margin1columnaseguridad{
+      margin-left: 0px
+  }
+  
+  .margin2filaseguridad{
+    margin: 20px 0px;
+  }
+  
+  .margin3imagenseguridad{
+    margin-left: 15px ;
+    width: 50%;
+  }
+
+  .posimagenseguridad{
+   margin-right: 15px;
+   width: 50%;
+  }
+  
+  .texto2filaseguridad{
+   margin-right: 0px;
+  }
+
+  .textoacordeon{
+    font-size: small;
+  }
+}
+
+/* media queries especial iPad Pro */
+
+@media all and (width: 1024px) {
+  footer {
+    padding-bottom: 805px;
+    padding-top: 20px;
+  }
+
+  #titulodelfooter {
+    /* es el titulo principal del footer bien alineado */
+    padding-left: 345px;
+  }
+
+  .ordenfooter2 {
+    /* es el orden del bloque de las 4 columnas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  #imagen3col {
+    /* es la imagen de la 3 columna del footer */
+    width: 17%;
+    margin: 20px 0px;
+  }
+
+  #margin2col {
+    /* margin de la 2 columna del footer */
+    margin: 20px 0px 20px 45px;
+  }
+
+  .footerimg1 {
+    /* es la posicion de la primera imagen del footer, es decir la 3 columna */
+    position: relative;
+    left: 25px;
+  }
+
+  .footer4col {
+    /* margen de la 4 columna del footer */
+    margin: 20px 50px 0px 0px;
+  }
+
+  .footerimgs2 {
+    /* ancho de las imagenes de la cuarta columna */
+    width: 40%;
+  }
+
+  .imagenerror404 {
+    /* imagen pagina error 404 */
+    background: white;
+    width: 100%;
+  }
+
+  .orden2section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ordencards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+  }
+
+  #ordentelefono {
+    margin: 0px 0px 50px 0px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: small;
+    position: relative;
+    right: 30px;
+    font-size: 15px;
+  }
+
+  .titulonavbar {
+    position: relative;
+    left: 50px;
+    font-family: "Black Han Sans", sans-serif;
+  }
+
+  .organizarseguridad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    float: none;
+  }
+
+  .margindel1divseguridad{
+    margin: 20px 15px;
+  
+  }
+  
+  .margin1columnaseguridad{
+      margin-left: 0px
+  }
+  
+  .margin2filaseguridad{
+    margin: 20px 0px;
+  }
+  
+  .margin3imagenseguridad{
+    margin-left: 15px ;
+    width: 50%;
+  }
+
+  .posimagenseguridad{
+   margin-right: 15px;
+   width: 50%;
+  }
+  
+  .texto2filaseguridad{
+   margin-right: 0px;
+  }
+
+  .textoacordeon{
+    font-size: small;
+  }
+
+  .margin2colenteraseguridad{
+    margin-right: 22px;
+
+  }
+}
+
